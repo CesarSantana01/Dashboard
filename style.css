@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Sans:ital,wght@1,400;1,700&family=Nunito:ital,wght@1,200&family=Rubik&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #211f57;
+    font-family: 'Rubik', sans-serif;
+    
+}
+button{
+    
+}
+button:hover{
+    transform: rotate(360deg);
+    
+    
+    transition: .5s;
+   
+}
+button:active{
+    filter: drop-shadow(0px 6px 5px #e6521358);
+    transform: scale(.8);
+    transition: .1s;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #0800ff;
+    text-shadow: 0px 0px 5px #2924b1;
+}
+a:hover{
+    text-shadow: 0px 0px 20px #861d9b;
+    
+    transition: .3s;
+}
+
+p{
+    color:#231f96;
+    font-size: 18px;
+}
+ul{
+    list-style-type: none;
+}
+
+.mainContainer{
+display: grid;
+height: 100%;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 1fr 9fr;
+
+}
+
+.mainContainer>div{
+    padding: 20px;
+    
+}
+
+.sidebar{
+    background-color: #2c248d;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 260px;
+    box-shadow: 0px 0px 20px black;
+}
+.logoName{
+    color: #861d9b;
+    text-shadow: 0px 0px 3px #861d9b;
+    font-size: 30px;
+}
+
+.sidebar .logoContent  .logo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    
+}
+.logoContent .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+    
+}
+.logoContent .logo .logoName{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+    border-radius: 12px;
+    
+}
+
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease ;
+    text-align: center;
+}
+.sidebar ul li a:hover{
+    transition: .2s;
+color: #7f12aa;
+background-color: #2d2a77;
+
+border-radius: 12px;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    grid-column: 2/4;
+}
+.search{
+display: flex;
+gap: 5px;
+filter: drop-shadow(0px 4px 3px #7f12aa58);
+}
+#search{
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 2px #2d2a77,
+     0px 0px 10px #2d2a77 inset;
+    border-radius: 20px;
+    height: 3rem;
+    width: 35rem;
+    align-self: center;
+    padding: 10px;
+    color: #9513b9;
+    font-size: 20px;
+    outline: rgb(255, 255, 255);
+    
+}
+
+.icons{
+      display: flex;
+      gap: 15px; 
+      filter: drop-shadow(0px 6px 5px #7f12aa58);
+    
+}
+.share{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://www.pngall.com/wp-content/uploads/2/Share-PNG-Picture.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    
+}   
+.profile{
+    height: 55px;
+    width: 55px;
+   
+    background-image: url(https://icon-library.com/images/profile-png-icon/profile-png-icon-2.jpg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+} 
+.notifications{
+    
+    height: 50px;
+    width: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/60/60977.png);
+    background-size: 50px 50px;
+    margin-right: -5;
+    background-color: transparent;
+} 
+.icons>button{
+    border: none;
+    transition: .5;
+}
+
+.mainBody{
+background-color: transparent;
+grid-column: 2/3;
+display: grid;
+
+grid-template-rows: repeat(auto-fit, 300px);
+grid-template-columns: repeat(2, 1fr ); 
+
+justify-items: end;
+align-items: center;
+gap: 15px;
+padding: 20px;
+
+}
+
+.project{
+    display: flex;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #a72df2, #3a07ba);
+    
+    animation: gradient 1s ease infinite;
+    box-shadow: 0px 0px 10px #b727db8b,
+                0px 0px 10px #8427db87 inset ;
+    
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100%;
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.project>a{
+    
+    align-self: flex-start;
+    padding: 1rem;
+}
+.project>img{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 0px;
+}
+.sharegit{
+    align-self:flex-end ;
+    padding: 1rem;
+}
+
+.miniSidebar{
+    background-color: transparent;
+    grid-column: 3/4;
+    border-top-left-radius: 8px;
+    box-shadow: 0px 0px 20px black inset;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+}
+
+.javaex{
+
+grid-row: 1/2;
+display: flex;
+flex-direction: column;
+
+}
+#javaexTitle{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    color: #9513b9;
+    text-shadow: 0px 0px 5px #7f12aa;
+    margin-bottom: 30px;
+}
+.javaCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 100%;
+    height: 100%;
+}
+.cssex{
+grid-row: 2/3;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+#cssexTitle{
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: #9513b9;
+    text-shadow: 0px 0px 5px #7f12aa;
+    margin-bottom: 40px;
+
+}
+.cssCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 100%;
+    height: 100%;
+}
+
+
+
